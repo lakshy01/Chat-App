@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+   <div class="container" id="loginBox">
+       <div class="row">
+           <h1 class="col text-center m-2 p-4">LOGIN</h1>
+       </div>
+       <div class="row">
+           <form class="col text-center m-2 p-3">
+               <div class="form-group">
+                   <label for="UserName">Enter the User Name</label>
+                   <br>
+                   <input type="text" placeholder="Enter the userName" id="UserName">
+               </div>
+               <div class="form-group">
+                   <label for="Password">Enter Password</label>
+                   <br>
+                   <input type="password" placeholder="Enter the Password" id="Password">
+               </div>
+           </form>
+       </div>
+       <div class="row">
+           <button class="col text-center m-3 p-3 btn btn-primary" id="LoginBtn">LogIn</button>
+       </div>
+   </div>
+
+
+   <div class="container" id="ChatBox">
+       <div class="row">
+           <h1 class="col text-center m-2 p-4">CHAT APP</h1>
+       </div>
+       <div class="row">
+           <form class="col text-center m-3 p-3">
+               <div class="form-group">
+                   <label for="defUserName">Set to all</label>
+                   <br>
+                   <input type="text" placeholder="Set to (default everyone)" id="defUserName">
+               </div>
+               <div class="form-group">
+                   <label for="msgBox"><b>ENTER THE TEXT</b></label>
+                   <br>
+                   <input type="text" placeholder="Enter the text" id="msgBox">
+               </div>
+           </form>
+       </div>
+       <div class="row">
+           <button class="col text-center m-2 p-2 btn btn-success" id="msgSend">Send</button>
+       </div>
+       <div class="row">
+           <div class="col card text-center m-3 p-4">
+               <ul id="msgList">
+
+               </ul>
+           </div>
+       </div>
+   </div>
+</body>
+</html>
